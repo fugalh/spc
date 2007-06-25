@@ -1,0 +1,32 @@
+spc.rb - Clone of the Sipura Profile Compiler (SPC) tool
+
+See also the SPA Admin Guide.
+
+Here is an example config:
+
+    Enable_Web_Server "Yes";
+    Web_Server_Port "80";
+    Enable_Web_Admin_Access "Yes";
+    Admin_Password "secret";
+
+    DHCP "Yes";
+    Syslog_Server "192.168.0.3";
+    Primary_NTP_Server "pool.ntp.org";
+
+    Provision_Enable "Yes";
+    Profile_Rule "http://example.com/profiles/prov.cgi?mac=$MA";
+
+    Time_Zone "GMT-07:00";
+    Daylight_Saving_Time_Rule "start=4/1/7;end=10/-1/7;save=1";
+
+    Text_Logo "Chunky Bacon!";
+
+    Proxy[1] "192.168.1.5:5060";
+    Register[1] "Yes";
+    Register_Expires[1] "1800";
+    Display_Name[1] "Batman";
+    User_ID[1] "42";
+    Password[1] "guano";
+    Dial_Plan[1] "(#xx|xxx|*xx|[3469]11|0|00|[2-9]xxxxxx|1xxx[2-9]xxxxxx|xxxxxxxxxxxx.)";
+
+
